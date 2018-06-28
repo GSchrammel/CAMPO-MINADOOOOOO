@@ -4,9 +4,11 @@ const boardConfig = {
   bombsAmount: 2,
 }
 
+// vou comendar os codiogos para o entendimento alheio 
+
 const randomNotRepeat = ( array, random ) => {
   const randomNum = random()
-  return !array.includes( randomNum ) ? randomNum : randomNotRepeat( array, random ) // isso nem funciona mas valeu a tentativa hskauhs
+  return !array.includes( randomNum ) ? randomNum : randomNotRepeat( array, random ) // entao isso nem funciona mas valeu a tentativa hskauhs
 }
 
 const randomBombsPositions = ( bombsAmount, boardSize ) => {
